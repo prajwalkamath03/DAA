@@ -3,8 +3,8 @@ class Job:
         self.taskId = taskId
         self.deadline = deadline
         self.profit = profit
-
-def schedulejobs(jobs, T):
+    
+    def schedulejobs(jobs, T):
     profit=0
     slot=[-1]*T
     jobs.sort(key=lambda x: x.profit, reverse=True)

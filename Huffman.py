@@ -81,6 +81,8 @@ encoded_binary_text = encode_text(text_input, huffman_tree)
 print("Encoded binary text:", encoded_binary_text)
 
 """
+OUTPUT
+------------------------------------------------------
 Enter characters: a b c d e
 Enter frequencies: 5 10 8 15 12
 b -> 00

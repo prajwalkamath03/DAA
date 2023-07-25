@@ -30,4 +30,36 @@ if __name__ == "__main__":
         try_again = input("Do you want to try again with different number of node? (yes/no):").lower()
         if try_again != "yes":
             break
+
+"""
+OUTPUT
+-----------------------------------------------------------------------
+Enter the number of drill holes(nodes): 5
+Enter the distance between node 1 and node 1: 5
+Enter the distance between node 1 and node 2: 4
+Enter the distance between node 1 and node 3: 6
+Enter the distance between node 1 and node 4: 2
+Enter the distance between node 1 and node 5: 1
+Enter the distance between node 2 and node 1: 3
+Enter the distance between node 2 and node 2: 8
+Enter the distance between node 2 and node 3: 9
+Enter the distance between node 2 and node 4: 7
+Enter the distance between node 2 and node 5: 8
+Enter the distance between node 3 and node 1: 5
+Enter the distance between node 3 and node 2: 1
+Enter the distance between node 3 and node 3: 2
+Enter the distance between node 3 and node 4: 5
+Enter the distance between node 3 and node 5: 6
+Enter the distance between node 4 and node 1: 34
+Enter the distance between node 4 and node 2: 5
+Enter the distance between node 4 and node 3: 4
+Enter the distance between node 4 and node 4: 4
+Enter the distance between node 4 and node 5: 3
+Enter the distance between node 5 and node 1: 5
+Enter the distance between node 5 and node 2: 6
+Enter the distance between node 5 and node 3: 8
+Enter the distance between node 5 and node 4: 7
+Enter the distance between node 5 and node 5: 5
+Optimal order of drilling:  [1, 5, 4, 3, 2, 1]
+Optimal cost of drilling:  20.0
          

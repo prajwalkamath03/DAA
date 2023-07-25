@@ -67,6 +67,8 @@ if optimal_route is None:
 else:
     print("Optimal route:", optimal_route)
 """
+OUTPUT
+------------------------------------------------------------------------------
 Enter a node (or 'done' if finished): A
 Enter a neighbor node for 'A' (or 'done' if finished): B
 Enter the weight between 'A' and 'B': 5

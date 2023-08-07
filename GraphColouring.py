@@ -31,7 +31,23 @@ class Graph:
         color_map = self.graph_coloring()
         return max(color_map.values())
 
-subjects = ['Math', 'Physics', 'Chemistry', 'Biology']
+if __name__ == "__main__":
+    subjects = []
+    num_subjects = int(input("Enter the number of subjects: "))
+    for _ in range(num_subjects):
+        subject = input("Enter subject name: ")
+        subjects.append(subject)
+
+    graph = Graph(subjects)
+
+    num_edges = int(input("Enter the number of subject relationships: "))
+    for _ in range(num_edges):
+        edge = input("Enter subject1 and subject2 separated by a space: ").split()
+        subject1, subject2 = edge[0], edge[1]
+        graph.add_edge(subject1, subject2)
+
+    """example
+    subjects = ['Math', 'Physics', 'Chemistry', 'Biology']
 students = {
     'Math' : ['Alice', 'Bob', 'Charlie'],
     'Physics' : ['Alice', 'Charlie', 'David'],
@@ -43,7 +59,8 @@ graph = Graph(subjects)
 graph.add_edge('Math', 'Physics')
 graph.add_edge('Math', 'Chemistry')
 graph.add_edge('Physics', 'Chemistry')
-graph.add_edge('Physics', 'Biology')
+graph.add_edge('Physics', 'Biology') """
+    
 
-minimun_time_slots = graph.get_minimum_time_slots()
-print(f"Minimum time slots required: {minimun_time_slots}")
+    minimun_time_slots = graph.get_minimum_time_slots()
+    print(f"Minimum time slots required: {minimun_time_slots}")
